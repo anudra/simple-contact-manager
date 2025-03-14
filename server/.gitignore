@@ -1,44 +1,13 @@
-# Ignore node_modules directory
-node_modules/
-
-# Ignore environment variables
-.env
-
-# Ignore logs
-logs/
-*.log
-npm-debug.log*
-
-# Ignore IDE-specific files
-.vscode/
-.idea/
-
-# Ignore build artifacts
-dist/
-build/
-
-# Ignore npm/yarn cache
-.npm
-.yarn
-.yarnrc
-
-# Ignore OS-specific files
-.DS_Store
-Thumbs.db
-
-# Ignore package-lock.json (if using Yarn)
+# npm
+node_modules
 package-lock.json
+npm-shrinkwrap.json
+*.log
+*.gz
 
-# Ignore local development files
-*.local
+# Coveralls
+.nyc_output
+coverage
 
-# Ignore debug logs
-debug.log
-
-# Ignore coverage reports
-coverage/
-.nyc_output/
-
-# Ignore temporary files
-tmp/
-temp/
+# Benchmarking
+benchmarks/graphs
