@@ -21,22 +21,14 @@ const Contact = ({index, contact }) => {
       <td>{index+1}</td>
       <td>
         {editMode ? (
-          <input
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
+          <input type="text" value={name} onChange={(e) => setName(e.target.value)}/>
         ) : (
           contact.name
         )}
       </td>
       <td>
         {editMode ? (
-          <input
-            type="text"
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-          />
+          <input type="text" value={phone} onChange={(e) => setPhone(e.target.value)} />
         ) : (
           contact.phone
         )}
